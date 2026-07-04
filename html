@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby Hub | Premium Showcase</title>
+    <style>
+        /* Modern Design System Framework */
+        html { scroll-behavior: smooth; }
+        body { 
+            margin: 0; 
+            padding-top: 70px; 
+            background: linear-gradient(180deg, #f4f7f6 0%, #e2e8f0 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1e293b;
+        } 
+        
+        /* Premium Nav: Blurry Glass Effect */
+        .custom-navbar { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            height: 70px;
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            z-index: 1000;
+        }
+        .navbar-brand { 
+            color: #0f172a; 
+            font-weight: 800; 
+            text-decoration: none; 
+            font-size: 22px; 
+            letter-spacing: -0.5px;
+        }
+        .navbar-brand span {
+            background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hero Header: Elegant Deep Gradient with Light Patterns */
+        .custom-hero { 
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%); 
+            color: white; 
+            text-align: center; 
+            padding: 90px 20px; 
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-title { 
+            font-size: 48px; 
+            margin-bottom: 15px; 
+            color: #f59e0b; 
+            font-weight: 800; 
+            letter-spacing: -1px;
+        }
+        .hero-subtitle { 
+            font-size: 19px; 
+            color: #e2e8f0; 
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Layout Grid Container */
+        .custom-container { max-width: 1140px; margin: 60px auto; padding: 0 25px; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-title { 
+            color: #0f172a; 
+            font-size: 36px; 
+            margin-bottom: 10px; 
+            font-weight: 800; 
+            letter-spacing: -0.5px;
+        }
+        .section-subtitle { color: #64748b; font-size: 16px; margin: 0; }
+        .grid-layout { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+
+        /* Premium Floating Card Element */
+        .hobby-card { 
+            flex: 1 1 300px; 
+            max-width: 340px;
+            padding: 35px 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hobby-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+        }
+        .hobby-card h3 { margin-top: 0; font-size: 24px; font-weight: 700; margin-bottom: 15px; }
+        .hobby-card p { font-size: 15px; line-height: 1.6; opacity: 0.9; margin-bottom: 0; }
+        
+        /* Refined Card-Specific Color Palette */
+        .color-reading { background-color: #10b981; color: white; }
+        .color-drawing { background-color: #f59e0b; color: #1e293b; }
+        .color-coding { background-color: #0ea5e9; color: white; }
+        .color-sports { background-color: #ef4444; color: white; }
+        .color-music { background-color: #1e293b; color: white; border-top: 6px solid #f59e0b; }
+
+        /* Sleek Modern Footer */
+        .custom-footer { 
+            background: #0f172a; 
+            color: #94a3b8; 
+            text-align: center; 
+            padding: 50px 20px; 
+            margin-top: 100px; 
+            border-top: 1px solid #1e293b;
+        }
+        .footer-logo { color: white; font-weight: 700; font-size: 18px; margin-bottom: 12px; }
+        .custom-footer p { margin: 0; font-size: 14px; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <!-- Global Glassmorphism Navigation Bar -->
+    <nav class="custom-navbar">
+        <a class="navbar-brand" href="#">🌈 <span>HobbyHub</span> Studio</a>
+    </nav>
+
+    <!-- Deep Midnight Gradient Hero Header -->
+    <header class="custom-hero">
+        <div class="hero-title">Welcome to My Hobby Hub</div>
+        <p class="hero-subtitle">A digital canvas presenting a curated mix of technical engineering, artistic expression, and athletic performance.</p>
+    </header>
+
+    <!-- Main Dynamic Section Layout -->
+    <main class="custom-container">
+        <div class="section-header">
+            <h2 class="section-title">The Lifestyle Matrix</h2>
+            <p class="section-subtitle">A balanced breakdown of the core interests that power my creative drive.</p>
+        </div>
+
+        <!-- Adaptive Grid System -->
+        <div class="grid-layout">
+            
+            <!-- Reading Card -->
+            <div class="hobby-card color-reading">
+                <h3>📚 Reading</h3>
+                <p>Exploring complex science fiction universes and deeply researched historical perspectives to continually broaden critical thinking frameworks.</p>
+            </div>
+
+            <!-- Drawing Card -->
+            <div class="hobby-card color-drawing">
+                <h3>🎨 Drawing</h3>
+                <p>Mapping fine-line physical landscapes and abstract concept blueprints to translate fluid creative ideas into concrete imagery.</p>
+            </div>
+
+            <!-- Coding Card -->
+            <div class="hobby-card color-coding">
+                <h3>💻 Coding</h3>
+                <p>Developing logical site architectures, building digital tool solutions, and solving intricate algorithm puzzles through micro-projects.</p>
+            </div>
+
+            <!-- Sports Card -->
+            <div class="hobby-card color-sports">
+                <h3>🏀 Sports</h3>
+                <p>Engaging in tactical team basketball strategies and enduring cross-country running sessions to refine physical discipline.</p>
+            </div>
+
+            <!-- Music Card -->
+            <div class="hobby-card color-music">
+                <h3>🎵 Music</h3>
+                <p>Unwinding with instrumental lo-fi arrangements while practicing basic scales and clean fingerpicking styles on an acoustic guitar.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Deep Charcoal Footer Section -->
+    <footer class="custom-footer">
+        <div class="footer-logo">HobbyHub Portfolio Ecosystem</div>
+        <p>&copy; 2026 Hobby Hub. Engineered beautifully with pure local CSS layout structures.</p>
+    </footer>
+
+</body>
+</html>
